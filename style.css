@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f5f5f5;
+    color: #111;
 }
 
 /* HEADER */
@@ -11,6 +12,7 @@ body {
     align-items: center;
     padding: 15px 20px;
     background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* LOGO */
@@ -21,8 +23,8 @@ body {
 }
 
 .logo-container img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -30,12 +32,18 @@ body {
 .logo-container h1 {
     font-size: 18px;
     margin: 0;
+    font-weight: bold;
 }
 
 /* CARRITO */
 .cart {
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cart:hover {
+    transform: scale(1.2);
 }
 
 /* HERO */
@@ -43,34 +51,47 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-    background: #eaeaea;
+    padding: 40px;
+    background: white;
     border-radius: 20px;
     margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
+/* TEXTO */
 .hero-text {
     max-width: 50%;
 }
 
 .hero-text h2 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* BOTÓN */
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
+    padding: 12px 22px;
     background: black;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+    transform: translateY(-2px);
 }
 
 /* IMAGEN */
 .hero-img img {
-    width: 250px;
+    width: 300px;
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
 }

@@ -38,7 +38,7 @@ body {
 .cart {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     cursor: pointer;
 }
 

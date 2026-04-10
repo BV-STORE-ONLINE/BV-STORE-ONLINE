@@ -1,3 +1,4 @@
+/* ================= ESTILO GENERAL ================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,9 +6,9 @@ body {
     color: #111;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
-    display: flex;
+    display: flex; /* pone elementos en línea */
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -15,68 +16,62 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* LOGO */
+/* Logo + nombre */
 .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/* Imagen del logo */
 .logo-container img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
+/* Texto del nombre */
 .logo-container h1 {
-    font-size: 26px;
+    font-size: 28px;
     margin: 0;
-    font-weight: bold;
 }
 
-/* CARRITO */
+/* Carrito */
 .cart {
     font-size: 26px;
     cursor: pointer;
-    transition: transform 0.2s ease;
 }
 
-.cart:hover {
-    transform: scale(1.2);
-}
-
-/* HERO */
+/* ================= HERO ================= */
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
+    margin: 20px;
     background: white;
     border-radius: 20px;
-    margin: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* TEXTO */
+/* Texto del hero */
 .hero-text {
     max-width: 50%;
 }
 
 .hero-text h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 45px;
 }
 
-/* BOTÓN */
+/* Botón de WhatsApp */
 .btn {
     display: inline-block;
+    margin-top: 20px;
     padding: 12px 22px;
     background: black;
     color: white;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
@@ -85,45 +80,26 @@ body {
     transform: translateY(-2px);
 }
 
-/* IMAGEN */
+/* Imagen del banner */
 .hero-img img {
-    width: 300px;
+    width: 600px;
     border-radius: 20px;
-    transition: 0.3s;
 }
 
-.hero-img img:hover {
-    transform: scale(1.05);
-}
-
-/* 📱 RESPONSIVE (CELULAR) */
+/* ================= RESPONSIVE (CELULAR) ================= */
 @media (max-width: 768px) {
 
     .hero {
-        flex-direction: column;
+        flex-direction: column; /* pone todo en vertical */
         text-align: center;
-        padding: 25px;
     }
 
     .hero-text {
         max-width: 100%;
     }
 
-    .hero-text h2 {
-        font-size: 24px;
-    }
-
     .hero-img img {
         width: 220px;
         margin-top: 20px;
-    }
-
-    .header {
-        flex-direction: row;
-        padding: 12px 15px;
-    }
-
-    .logo-container h1 {
-        font-size: 16px;
     }
 }

@@ -95,3 +95,35 @@ body {
 .hero-img img:hover {
     transform: scale(1.05);
 }
+
+/* 📱 RESPONSIVE (CELULAR) */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-img img {
+        width: 220px;
+        margin-top: 20px;
+    }
+
+    .header {
+        flex-direction: row;
+        padding: 12px 15px;
+    }
+
+    .logo-container h1 {
+        font-size: 16px;
+    }
+}

@@ -43,8 +43,10 @@ body {
 }
 
 .cart img {
-    width: 9px;
-    height: 9px;
+   width: 18px !important;
+    height: 18px !important;
+    max-width: 18px;
+    max-height: 18px;
     object-fit: contain;
 }
 

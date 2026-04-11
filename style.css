@@ -55,6 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px; /* ← BAJA TODO EL BANNER */
 }
 
 /* IMAGEN */
@@ -68,7 +69,7 @@ body {
 .btn-banner {
     position: absolute;
     bottom: 40px;
-    left: 50%;
+    left: 23%;
     transform: translateX(-50%);
     background: black;
     color: white;

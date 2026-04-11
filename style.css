@@ -68,7 +68,7 @@ body {
 .btn-banner {
     position: absolute;
     bottom: 40px;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
     background: black;
     color: white;

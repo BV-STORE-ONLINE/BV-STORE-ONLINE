@@ -55,7 +55,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* ← BAJA TODO EL BANNER */
 }
 
 /* IMAGEN */
@@ -69,7 +68,7 @@ body {
 .btn-banner {
     position: absolute;
     bottom: 40px;
-    left: 23%;
+    left: 50%;
     transform: translateX(-50%);
     background: black;
     color: white;
@@ -120,4 +119,18 @@ body {
         font-size: 16px;
         padding: 12px 24px;
     }
+}
+
+/* ===== AJUSTE DE TAMAÑO DEL BANNER (PC Y MÓVIL) ===== */
+
+.hero-img img {
+    height: 85vh; /* tamaño en PC */
+}
+
+@media (max-width: 768px) {
+
+    .hero-img img {
+        height: 60vh; /* tamaño ideal en celular */
+    }
+
 }

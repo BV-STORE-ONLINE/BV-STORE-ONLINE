@@ -134,3 +134,19 @@ body {
     }
 
 }
+
+/* ===== CORRECCIÓN DEL BANNER (NO TOCAR LO ANTERIOR) ===== */
+
+.hero-img img {
+    object-position: center; /* centra la imagen */
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+
+    .hero-img img {
+        object-fit: contain; /* evita cortes */
+        background: #000; /* relleno elegante */
+    }
+
+}
